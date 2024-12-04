@@ -1,0 +1,73 @@
+# Python后端
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+venv/
+ENV/
+
+# 数据库文件
+*.db
+*.sqlite3
+
+# 上传的文件
+backend/static/reports/*
+!backend/static/reports/.gitkeep
+
+# 日志文件
+*.log
+logs/
+
+# 微信小程序
+wechat_app/node_modules/
+wechat_app/miniprogram_npm/
+wechat_app/dist/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE配置文件
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# 本地配置文件
+backend/instance/
+backend/config/local_settings.py
+wechat_app/config/local.js
+
+# 证书和密钥
+*.pem
+*.key
+*.crt
+
+# 临时文件
+*.tmp
+.temp/
+.cache/
+
+# 系统文件
+Thumbs.db
+.DS_Store

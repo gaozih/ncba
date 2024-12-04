@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">
+    <text class="title">我的报告</text>
+  </view>
+
+  <view class="reports-list">
+    <block wx:if="{{loading}}">
+      <view class="loading">
+        <image class="loading-icon" src="/images/loading.gif"></image>
+      </view>
+    </block>
+
+    <block wx:elif="{{reports.length === 0}}">
+      <view class="empty-state">
+        <image src="/images/empty.png"></image>
+        <text>暂无报告</text>
+      </view>
+    </block>
+
+    <block wx:else>
+      <view class="report-item" wx:for="{{reports}}" wx:key="id">
+        <view class="report-info" bindtap="previewReport" data-id="{{item.id}}" data-filename="{{item.filename}}">
+          <image class="pdf-icon" src="/images/pdf-icon.png"></image>
+          <view class="report-details">
+            <text class="report-name">{{item.filename}}</text>
+            <text class="report-date">上传时间：{{item.upload_time}}</text>
+          </view>
+        </view>
+        
+        <view class="report-actions">
+          <button class="action-btn preview" bindtap="previewReport" data-id="{{item.id}}" data-filename="{{item.filename}}">
+            预览
+          </button>
+          <button class="action-btn download" bindtap="downloadReport" data-id="{{item.id}}" data-filename="{{item.filename}}">
+            下载
+          </button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view> 

@@ -1,0 +1,107 @@
+.container {
+  padding: 20rpx;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 30rpx 0;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.reports-list {
+  width: 100%;
+}
+
+.report-item {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.report-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20rpx;
+}
+
+.pdf-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+
+.report-details {
+  flex: 1;
+}
+
+.report-name {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.report-date {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.report-actions {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1rpx solid #eee;
+  padding-top: 20rpx;
+}
+
+.action-btn {
+  margin-left: 20rpx;
+  font-size: 26rpx;
+  padding: 10rpx 30rpx;
+  border-radius: 30rpx;
+  background: #f0f0f0;
+  border: none;
+}
+
+.action-btn.preview {
+  background: #e6f3ff;
+  color: #1890ff;
+}
+
+.action-btn.download {
+  background: #f6ffed;
+  color: #52c41a;
+}
+
+.loading {
+  text-align: center;
+  padding: 40rpx;
+}
+
+.loading-icon {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 100rpx 0;
+}
+
+.empty-state image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-bottom: 20rpx;
+}
+
+.empty-state text {
+  font-size: 28rpx;
+  color: #999;
+} 
