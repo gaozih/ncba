@@ -1,0 +1,40 @@
+.feedback-container {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  padding: 20rpx;
+}
+
+.feedback-input {
+  width: 100%;
+  height: 300rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+
+.word-count {
+  text-align: right;
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+.button-group {
+  margin-top: 60rpx;
+  padding: 0 30rpx;
+}
+
+.submit-btn, .cancel-btn {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+}
+
+.cancel-btn {
+  background: #f8f8f8;
+  color: #666;
+} 

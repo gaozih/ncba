@@ -1,0 +1,30 @@
+<view class="delete-container">
+  <view class="warning-section">
+    <icon type="warn" size="64" color="#ff4d4f"></icon>
+    <view class="warning-title">确认注销账号</view>
+    <view class="warning-desc">
+      <text>注销后，您的账号将被永久删除，所有数据都将无法恢复。</text>
+      <text>如果确认注销，请在下方输入"注销账号"四个字。</text>
+    </view>
+  </view>
+
+  <view class="confirm-section">
+    <input class="confirm-input" 
+      placeholder="请输入：注销账号" 
+      value="{{confirmText}}" 
+      bindinput="handleInput"
+    />
+  </view>
+
+  <view class="button-group">
+    <button class="delete-btn" 
+      type="warn" 
+      bindtap="handleDelete" 
+      loading="{{isDeleting}}"
+      disabled="{{confirmText !== '注销账号'}}"
+    >
+      确认注销
+    </button>
+    <button class="cancel-btn" bindtap="handleCancel">取消</button>
+  </view>
+</view> 

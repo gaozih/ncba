@@ -76,3 +76,5 @@ Thumbs.db
 # 微信小程序特定文件
 project.config.json
 project.private.config.json
+
+backend_plan.md

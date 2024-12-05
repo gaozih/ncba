@@ -1,0 +1,22 @@
+<view class="feedback-container">
+  <mp-form>
+    <mp-cells>
+      <mp-cell title="反馈内容">
+        <textarea class="feedback-input" 
+          placeholder="请输入您的反馈内容" 
+          value="{{content}}" 
+          bindinput="handleInput"
+          maxlength="500"
+        ></textarea>
+        <view class="word-count">{{content.length}}/500</view>
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+
+  <view class="button-group">
+    <button class="submit-btn" type="primary" bindtap="handleSubmit" loading="{{isSubmitting}}">
+      提交反馈
+    </button>
+    <button class="cancel-btn" bindtap="handleCancel">取消</button>
+  </view>
+</view> 

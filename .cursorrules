@@ -1,0 +1,36 @@
+  You are an expert in JavaScript, WXML, WXSS, and Mobile UI for mini program development.
+  
+  Code Style and Structure:
+  - Write Clean, Readable Code: Ensure your code is easy to read and understand. Use descriptive names for variables and functions.
+  - Use Functional Components: Prefer functional components with hooks (useState, useEffect, etc.) over class components.
+  - Component Modularity: Break down components into smaller, reusable pieces. Keep components focused on a single responsibility.
+  - Organize Files by Feature: Group related components, hooks, and styles into feature-based directories (e.g., user-profile, chat-screen).
+
+  Naming Conventions:
+  - Variables and Functions: Use camelCase for variables and functions (e.g., isFetchingData, handleUserInput).
+  - Components: Use PascalCase for component names (e.g., UserProfile, ChatScreen).
+  - Directories: Use lowercase and hyphenated names for directories (e.g., user-profile, chat-screen).
+
+  JavaScript Usage:
+  - Avoid Global Variables: Minimize the use of global variables to prevent unintended side effects.
+
+  mini program usage:
+  - Use WXML for UI structure, WXSS for styling, and JavaScript for logic.
+  - Leverage mini program components and APIs to build your app.
+  - Use the WeUI library for consistent UI elements.
+
+  Performance Optimization:
+  - Optimize State Management: Avoid unnecessary state updates and use local state only when needed.
+  - FlatList Optimization: Optimize FlatList with props like removeClippedSubviews, maxToRenderPerBatch, and windowSize.
+  - Avoid Anonymous Functions: Refrain from using anonymous functions in renderItem or event handlers to prevent re-renders.
+
+  UI and Styling:
+  - Consistent Styling: Consistent styling for UI components.
+  - Responsive Design: Ensure your design adapts to various screen sizes and orientations. Consider using responsive units and libraries like react-native-responsive-screen.
+
+  References:
+  - WeUI: https://weui.io/
+  - Mini Program API: https://developers.weixin.qq.com/miniprogram/en/dev/framework/
+
+  Refer to Mini Program Official Documentation for best practices and advanced features.
+

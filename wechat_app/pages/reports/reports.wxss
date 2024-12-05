@@ -1,0 +1,85 @@
+.reports-container {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  padding: 20rpx;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200rpx;
+}
+
+.empty-image {
+  width: 240rpx;
+  height: 240rpx;
+  margin-bottom: 30rpx;
+}
+
+.empty-text {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.reports-list {
+  padding: 20rpx 0;
+}
+
+.report-item {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-info {
+  flex: 1;
+  margin-right: 20rpx;
+}
+
+.report-title {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.report-date {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.download-btn {
+  background: #1AAD19;
+  color: #fff;
+  font-size: 28rpx;
+  padding: 16rpx 32rpx;
+  border-radius: 44rpx;
+  border: none;
+  min-width: 160rpx;
+}
+
+.download-btn::after {
+  border: none;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 30rpx 0;
+}
+
+.progress-content {
+  padding: 30rpx;
+}
+
+.progress-text {
+  display: block;
+  text-align: center;
+  margin-top: 20rpx;
+  color: #666;
+  font-size: 28rpx;
+} 

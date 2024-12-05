@@ -1,0 +1,27 @@
+<view class="login-container">
+  <view class="header">
+    <image class="logo" src="/assets/images/logo.png" mode="aspectFit"></image>
+    <text class="title">报告查看</text>
+  </view>
+
+  <view class="content">
+    <block wx:if="{{!hasUserInfo}}">
+      <button class="login-btn" type="primary" open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo">
+        微信登录
+      </button>
+    </block>
+
+    <block wx:elif="{{!hasPhoneNumber}}">
+      <view class="phone-bind-section">
+        <text class="tips">请绑定手机号完成注册</text>
+        <button class="phone-btn" type="primary" open-type="getPhoneNumber" bindgetphonenumber="handleGetPhoneNumber">
+          获取手机号
+        </button>
+      </view>
+    </block>
+  </view>
+
+  <mp-dialog title="登录提示" show="{{showDialog}}" bindbuttontap="tapDialogButton" buttons="{{dialogButtons}}">
+    <view>{{dialogMessage}}</view>
+  </mp-dialog>
+</view> 

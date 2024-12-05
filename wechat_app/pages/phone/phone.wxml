@@ -1,0 +1,41 @@
+<view class="phone-container">
+  <mp-form>
+    <mp-cells>
+      <mp-cell title="手机号">
+        <input class="phone-input" 
+          type="number" 
+          placeholder="请输入新的手机号" 
+          value="{{phone}}" 
+          bindinput="handlePhoneInput"
+          maxlength="11"
+        />
+      </mp-cell>
+      <mp-cell title="验证码" ext-class="vcode-cell">
+        <input class="code-input" 
+          type="number" 
+          placeholder="请输入验证码" 
+          value="{{code}}" 
+          bindinput="handleCodeInput"
+          maxlength="6"
+        />
+        <button class="send-code-btn" 
+          bindtap="handleSendCode" 
+          disabled="{{!canSendCode || countdown > 0}}"
+        >
+          {{countdown > 0 ? countdown + 's' : '发送验证码'}}
+        </button>
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+
+  <view class="button-group">
+    <button class="submit-btn" 
+      type="primary" 
+      bindtap="handleSubmit" 
+      loading="{{isSubmitting}}"
+      disabled="{{!isFormValid}}"
+    >
+      确认修改
+    </button>
+  </view>
+</view> 

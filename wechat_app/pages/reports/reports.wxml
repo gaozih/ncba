@@ -1,0 +1,35 @@
+<view class="reports-container">
+  <!-- 空状态展示 -->
+  <view class="empty-state" wx:if="{{reports.length === 0}}">
+    <image class="empty-image" src="/assets/images/empty.png" mode="aspectFit"></image>
+    <text class="empty-text">暂无报告</text>
+  </view>
+
+  <!-- 报告列表 -->
+  <view class="reports-list" wx:else>
+    <view class="report-item" wx:for="{{reports}}" wx:key="id">
+      <view class="report-info">
+        <view class="report-title">{{item.title}}</view>
+        <view class="report-date">{{item.createTime}}</view>
+      </view>
+      <view class="report-actions">
+        <button class="download-btn" data-id="{{item.id}}" bindtap="handleDownload">
+          下载报告
+        </button>
+      </view>
+    </view>
+  </view>
+
+  <!-- 加载状态 -->
+  <view class="loading-state" wx:if="{{isLoading}}">
+    <mp-loading type="dot-gray" show="{{true}}"></mp-loading>
+  </view>
+
+  <!-- 下载进度弹窗 -->
+  <mp-dialog title="下载进度" show="{{showProgress}}" buttons="{{[]}}" mask="{{true}}">
+    <view class="progress-content">
+      <progress percent="{{downloadProgress}}" stroke-width="4"/>
+      <text class="progress-text">{{downloadProgress}}%</text>
+    </view>
+  </mp-dialog>
+</view> 

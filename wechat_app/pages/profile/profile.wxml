@@ -1,0 +1,35 @@
+<view class="profile-container">
+  <!-- 用户信息区域 -->
+  <view class="user-info">
+    <image class="avatar" src="{{userInfo.avatarUrl || '/assets/images/default-avatar.png'}}"></image>
+    <view class="info-right">
+      <text class="nickname">{{userInfo.nickName || '微信用户'}}</text>
+      <text class="phone">{{userInfo.phone || '未绑定手机号'}}</text>
+    </view>
+  </view>
+
+  <!-- 功能列表 -->
+  <view class="function-list">
+    <mp-cells>
+      <!-- 客服反馈 -->
+      <mp-cell link hover value="客服反馈" bindtap="navigateToFeedback">
+        <image slot="icon" class="cell-icon" src="/assets/icons/feedback.png"></image>
+      </mp-cell>
+      
+      <!-- 修改手机号 -->
+      <mp-cell link hover value="修改手机号" bindtap="navigateToPhone">
+        <image slot="icon" class="cell-icon" src="/assets/icons/phone.png"></image>
+      </mp-cell>
+      
+      <!-- 注销账号 -->
+      <mp-cell link hover value="注销账号" bindtap="navigateToDelete">
+        <image slot="icon" class="cell-icon" src="/assets/icons/delete.png"></image>
+      </mp-cell>
+    </mp-cells>
+  </view>
+
+  <!-- 版本信息 -->
+  <view class="version-info">
+    <text class="version-text">版本 {{version}}</text>
+  </view>
+</view> 

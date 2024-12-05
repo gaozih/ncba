@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的报告",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#f8f8f8",
+  "usingComponents": {
+    "mp-loading": "weui-miniprogram/loading/loading",
+    "mp-dialog": "weui-miniprogram/dialog/dialog"
+  }
+} 
