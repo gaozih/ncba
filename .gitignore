@@ -27,6 +27,7 @@ ENV/
 # 数据库文件
 *.db
 *.sqlite3
+backend/migrations/
 
 # 上传的文件
 backend/static/reports/*
@@ -71,3 +72,7 @@ wechat_app/config/local.js
 # 系统文件
 Thumbs.db
 .DS_Store
+
+# 微信小程序特定文件
+project.config.json
+project.private.config.json
